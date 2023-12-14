@@ -1,0 +1,16 @@
+{
+    "name": "samtec/teste-php",
+    "description": "Teste de php",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SamTecDev7",
+            "email": "samtec.dev7@gmail.com"
+        }
+    ],
+    "require": {}
+}
