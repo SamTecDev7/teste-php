@@ -50,7 +50,27 @@
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row">
+                <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Validar Sequência de Colchetes</h4>
+                                <span class="text-muted font-14px">Dizemos que uma sequência de colchetes é válida se as seguintes condições forem atendidas:<br>
+                                    ● Não contém colchetes sem correspondência.<br>
+                                    ● O subconjunto de colchetes dentro dos limites de um par de colchetes correspondente é
+                                    também um par de colchetes.<br><br>
 
+                                    Exemplos:<br>
+                                    ● (){}[] é válido.<br>
+                                    ● []<span class="text-red">{</span>() não é válido.
+                                </span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="colchetes" placeholder="({[]})">
+                                <label for="colchetes">Colchetes aqui...</label>
+                            </div>
+                            <button id="btnSubmit" class="btn btn-primary">VALIDAR</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">

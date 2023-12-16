@@ -5,7 +5,15 @@ document.querySelector('#colchetes').addEventListener('input', function () {
 document.querySelector('#btnSubmit').addEventListener('click', function () {
     const url = '/TesteValidacao/validarColchetes/';
     const parametros = document.querySelector('#colchetes').value;
-    executarRequisicaoGetFetch(url, parametros);
+    if (parametros.trim() != '') { 
+        executarRequisicaoGetFetch(url, parametros);
+    } else {
+        Swal.fire({
+            title: "Ops!",
+            text: "O campo não pode ser vazio!",
+            icon: "warning"
+        });
+    }
 });
 
 const restringerSomenteAColchetes = (element) => {
